@@ -1,6 +1,5 @@
 const extractIds = require('./lib/extractIdsFromHtml');
 const fetchMeta = require('./lib/fetchMetaWithId');
-const https = require('https');
 const fetch = require('node-fetch');
 
 // fetch up to 10 posts for an instagram user
