@@ -1,0 +1,24 @@
+{
+  "name": "instagram-latest",
+  "version": "0.0.1",
+  "description": "fetches the latest instagram posts for a user",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/test.*.js",
+    "lint": "eslint **/*.js"
+  },
+  "keywords": [
+    "methods"
+  ],
+  "author": "First+Third",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-firstandthird": "^4.3.0",
+    "eslint-plugin-import": "^2.12.0",
+    "tap": "^12.0.1"
+  }
+}
