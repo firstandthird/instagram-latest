@@ -9,7 +9,11 @@ module.exports = async(instagramUser, limit=10) => {
   const idList = await extractIds(page, limit);
   const results = [];
   await Promise.all(idList.map(id => new Promise(async(resolve, reject) => {
-    results.push(await fetchMeta(id));
+    try {
+      results.push(await fetchMeta(id));
+    } catch (e) {
+      // pass over in silence
+    }
     resolve();
   })));
   return results;
